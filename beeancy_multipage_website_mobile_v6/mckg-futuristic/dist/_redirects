@@ -1,0 +1,5 @@
+# Cloudflare Pages SPA routing
+# All client-side routes (e.g. /blog, /blog/article-slug, /about, /services,
+# /why-beeancy, /contact, /privacy-policy, /terms) are served by React Router.
+# Without this rule, direct visits and refreshes on those paths return 404.
+/*    /index.html   200
