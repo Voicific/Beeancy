@@ -1,5 +1,7 @@
-# Cloudflare Pages SPA routing
-# All client-side routes (e.g. /blog, /blog/article-slug, /about, /services,
-# /why-beeancy, /contact, /privacy-policy, /terms) are served by React Router.
-# Without this rule, direct visits and refreshes on those paths return 404.
-/*    /index.html   200
+# Old React-router URLs → new static pages (Pages serves /page for page.html automatically)
+/why-beeancy   /#why           301
+/blog          /               301
+/blog/*        /               301
+
+# Legacy asset paths that no longer exist
+/assets/*      /               301
